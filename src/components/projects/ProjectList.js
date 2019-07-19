@@ -1,5 +1,6 @@
 import React from 'react'
-import ProjectSummary from '../projects/ProjectSummary';
+import ProjectSummary from '../projects/ProjectSummary'
+import { Link } from 'react-router-dom'
 
 //taking the projects as a prop here
 const ProjectList = ({projects}) => {
@@ -8,7 +9,9 @@ const ProjectList = ({projects}) => {
             {/* this means if we have projects, then map them, if we don't have, ignore */}
             { projects && projects.map(project => {
                 return(
-                    <ProjectSummary project={project} key={project.id} />
+                    <Link to={'/project/' + project.id}>
+                        <ProjectSummary project={project} key={project.id} />
+                    </Link>
                 )
             })}
         </div>

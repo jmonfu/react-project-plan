@@ -14,7 +14,7 @@
     "redux": "^4.0.0",
     "redux-firestore": "^0.5.7",
     "redux-thunk": "^2.3.0",
-    "yarn": "^1.17.3",
+    "yarn": "^1.22.0",
     "yarn-install": "^1.0.0"
   },
   "scripts": {
